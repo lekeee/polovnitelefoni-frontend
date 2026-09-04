@@ -3,6 +3,7 @@ import Link from "next/link";
 import UserAvatar from "../ui/UserAvatar";
 import PrimaryButton from "../ui/PrimaryButton";
 import { PlusCircle } from "lucide-react";
+import SavedAdsIndicator from "../ui/SavedAdsIndicator";
 
 export default function Navbar() {
     return <nav className="w-full max-w-7xl mx-auto flex flex-col items-center justify-between py-0 px-5">
@@ -18,7 +19,6 @@ export default function Navbar() {
                 <Link href="/" className="text-sm">EUR</Link>
             </div>
         </div>
-        {/* <PrimaryButton href="/login" text="List Your Item" /> */}
         <div className="flex justify-between items-center py-2.5 w-full">
             <div className="w-72">
                 <Link href="/" className="w-36 h-12">
@@ -41,7 +41,7 @@ export default function Navbar() {
                 <div>
                     <PrimaryButton href="/login" text="Dodaj oglas" icon={PlusCircle} />
                 </div>
-
+                <SavedAdsIndicator />
             </div>
         </div>
     </nav >
