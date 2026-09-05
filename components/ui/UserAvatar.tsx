@@ -45,9 +45,9 @@ export default function UserAvatar({ name, lastname }: Props) {
 
     return (
         <div
-            className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold text-sm select-none transition-colors ${colorClass.bg} ${colorClass.text}`}
+            className={`w-10 h-10 rounded-full flex items-center justify-center select-none transition-colors ${colorClass.bg} ${colorClass.text}`}
         >
-            <span>{initials}</span>
+            <span className="select-none text-lg font-semibold">{initials}</span>
         </div>
     );
 }
