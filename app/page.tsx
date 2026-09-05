@@ -1,4 +1,5 @@
 import FeaturedAds from "@/components/common/FeaturedAds";
+import MainInfos from "@/components/common/MainInfos";
 import Navbar from "@/components/common/Navbar";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       <main>
         <FeaturedAds />
+        <MainInfos />
       </main>
     </>
   );

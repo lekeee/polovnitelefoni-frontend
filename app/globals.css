@@ -9,6 +9,10 @@ h6 {
   color: var(--color-black);
 }
 
+body {
+  background-color: var(--color-background);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,8 +32,5 @@ h6 {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  :root {}
 }
