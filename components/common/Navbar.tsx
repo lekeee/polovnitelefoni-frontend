@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import UserAvatar from "../ui/UserAvatar";
 import PrimaryButton from "../ui/PrimaryButton";
-import { Contact, Home, MessageCircleWarning, Newspaper, PlusCircle, ShoppingBag, Wifi } from "lucide-react";
+import { ChevronDown, Home, MessageCircleWarning, Newspaper, PlusCircle, ShoppingBag, Wifi } from "lucide-react";
 import SavedAdsIndicator from "../ui/SavedAdsIndicator";
 import Search from "../ui/Search";
 
@@ -43,37 +43,44 @@ export default function Navbar() {
                 <SavedAdsIndicator />
             </div>
         </div>
-        <div className="w-full flex items-center justify-between my-2.5">
-            <select className="border border-gray-300 rounded-md px-4 py-2 text-sm w-75 h-16">
-                <option>Sve kategorije</option>
-            </select>
+        <div className="w-full flex items-stretch justify-between my-2.5">
+            <div className="rounded-full bg-black px-4 py-2 text-sm w-75 h-12.5 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                    <Image src="/icons/hamburger-menu-half.svg" alt="Logo" height={30} width={30} className="text-white" />
+                    <span className="text-white font-medium text-lg">Sve kategorije</span>
+                </div>
+                <ChevronDown className="text-white h-4 w-4" />
+            </div>
             <div className="flex gap-8">
-                <Link href="/" className="text-sm flex gap-2">
-                    <Home className="w-5 h-5" />
-                    <p className="font-semibold">Početna</p>
+                <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center border-b-2 border-primary">
+                    <Home className="w-5 h-5 text-primary" />
+                    <p className="font-semibold text-primary">Početna</p>
                 </Link>
-                <Link href="/" className="text-sm flex gap-2">
+                <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <ShoppingBag className="w-5 h-5" />
                     <p className="font-semibold">Šop</p>
                 </Link>
-                <Link href="/" className="text-sm flex gap-2">
+                <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <Wifi className="w-5 h-5" />
                     <p className="font-semibold">Pretplati se</p>
                 </Link>
-                <Link href="/" className="text-sm flex gap-2">
+                {/* <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <Contact className="w-5 h-5" />
                     <p className="font-semibold">Kontakt</p>
-                </Link>
-                <Link href="/" className="text-sm flex gap-2">
+                </Link> */}
+                <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <Newspaper className="w-5 h-5" />
                     <p className="font-semibold">Blog</p>
                 </Link>
-                <Link href="/" className="text-sm flex gap-2">
+                <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <MessageCircleWarning className="w-5 h-5" />
                     <p className="font-semibold">Podrška</p>
                 </Link>
             </div>
-            <Link href="/" className="text-sm">Kontakt</Link>
+            <Link href="/" className="h-12.5 flex justify-center items-center gap-2">
+                <Image src="/icons/new-indicator.svg" alt="Logo" height={30} width={30} className="text-white" />
+                <span className="text-[1rem] font-semibold text-black">Proceni Uređaj</span>
+            </Link>
         </div>
     </nav >
 }
