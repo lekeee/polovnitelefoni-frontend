@@ -9,10 +9,6 @@ h6 {
   color: var(--color-black);
 }
 
-p {
-  font-size: 1rem;
-}
-
 :root {
   --background: #ffffff;
   --foreground: #171717;

@@ -54,15 +54,15 @@ export default function Navbar() {
             <div className="flex gap-8">
                 <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center border-b-2 border-primary">
                     <Home className="w-5 h-5 text-primary" />
-                    <p className="font-semibold text-primary">Početna</p>
+                    <p className="font-semibold text-primary text-[1rem]">Početna</p>
                 </Link>
                 <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <ShoppingBag className="w-5 h-5" />
-                    <p className="font-semibold">Šop</p>
+                    <p className="font-semibold text-[1rem] ">Šop</p>
                 </Link>
                 <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <Wifi className="w-5 h-5" />
-                    <p className="font-semibold">Pretplati se</p>
+                    <p className="font-semibold text-[1rem]">Pretplati se</p>
                 </Link>
                 {/* <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <Contact className="w-5 h-5" />
@@ -70,11 +70,11 @@ export default function Navbar() {
                 </Link> */}
                 <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <Newspaper className="w-5 h-5" />
-                    <p className="font-semibold">Blog</p>
+                    <p className="font-semibold text-[1rem]">Blog</p>
                 </Link>
                 <Link href="/" className="text-sm flex gap-2 h-full justify-center items-center">
                     <MessageCircleWarning className="w-5 h-5" />
-                    <p className="font-semibold">Podrška</p>
+                    <p className="font-semibold text-[1rem]">Podrška</p>
                 </Link>
             </div>
             <Link href="/" className="h-12.5 flex justify-center items-center gap-2">
