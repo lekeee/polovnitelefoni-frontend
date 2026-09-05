@@ -2,18 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 import UserAvatar from "../ui/UserAvatar";
 import PrimaryButton from "../ui/PrimaryButton";
-import { ChevronDown, Home, MessageCircleWarning, Newspaper, PlusCircle, ShoppingBag, Wifi } from "lucide-react";
+import { Bookmark, ChevronDown, Home, MessageCircleWarning, Newspaper, PlusCircle, ShieldQuestionMark, ShoppingBag, Store, Wifi } from "lucide-react";
 import SavedAdsIndicator from "../ui/SavedAdsIndicator";
 import Search from "../ui/Search";
 
 export default function Navbar() {
     return <nav className="w-full max-w-7xl mx-auto flex flex-col items-center justify-between py-0 px-5">
         <div className="w-full flex items-stretch justify-between my-2.5">
-            <div className="flex gap-8">
-                <Link href="/" className="text-sm">O nama</Link>
-                <Link href="/" className="text-sm">Moj nalog</Link>
-                <Link href="/" className="text-sm">Moji oglasi</Link>
-                <Link href="/" className="text-sm">Sacuvani oglasi</Link>
+            <div className="flex gap-6">
+                <Link href="/" className="text-sm flex items-center gap-1">
+                    <ShieldQuestionMark className="w-5 h-5" />
+                    O nama</Link>
+                <Link href="/" className="text-sm flex items-center gap-1">
+                    <Store className="w-4 h-4" />Moji oglasi
+                </Link>
+                <Link href="/" className="text-sm flex items-center gap-1">
+                    <Bookmark className="w-4 h-4" />
+                    Sacuvani oglasi
+                </Link>
             </div>
             <div className="flex gap-8">
                 <Link href="/" className="text-sm">Srpski</Link>
