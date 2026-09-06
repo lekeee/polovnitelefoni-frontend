@@ -2,7 +2,7 @@ import { BadgePercent, Headphones, ShieldCheck, UserCheck } from "lucide-react";
 
 export default function MainInfos() {
     return <section className="w-full max-w-7xl mx-auto flex flex-col items-center justify-between py-0 px-5">
-        <div className="bg-white w-full shadow-[0_0px_10px_0px_rgba(0,0,0,0.08)] p-6 rounded-2xl flex gap-6 relative overflow-hidden grid-cols-4">
+        <div className="bg-white w-full shadow-soft p-6 rounded-2xl flex gap-6 relative overflow-hidden grid-cols-4">
             <div className="flex gap-4 flex-1 item-center">
                 <div className="w-10 h-10 bg-[#fde6e8] rounded-full flex items-center justify-center">
                     <BadgePercent className="text-primary w-6 h-6" />

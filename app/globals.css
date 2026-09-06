@@ -29,6 +29,10 @@ body {
   --color-blue-dark: #041e42;
   --color-third: #041e42;
   --color-border: #E5E7EB;
+  --color-gray: #f1f1f1;
+  --color-green: #29a046;
+  --color-green-light: #2bda55;
+  --shadow-soft: 0 0px 10px 0px rgba(0, 0, 0, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {

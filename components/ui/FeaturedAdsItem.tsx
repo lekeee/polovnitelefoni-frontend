@@ -16,7 +16,7 @@ export default function FeaturedAdsItem({
     price,
     imageUrl
 }: Props) {
-    return <div className="bg-white shadow-[0_0px_10px_0px_rgba(0,0,0,0.08)] p-6 rounded-2xl flex gap-6 relative overflow-hidden">
+    return <div className="bg-white shadow-soft p-6 rounded-2xl flex gap-6 relative overflow-hidden">
         <div className={`absolute aspect-square h-[150%] bottom-0 right-0 rounded-full ${type === 1 ? 'bg-[#FFF1F2]' : type === 2 ? 'bg-[#E0F7FA]' : 'bg-[#F0FDF4]'} transform translate-2/5`}></div>
         <div className={`absolute aspect-square h-full bottom-0 right-0 rounded-full ${type === 1 ? 'bg-[#fde6e8]' : type === 2 ? 'bg-[#c4f8ff]' : 'bg-[#dcffe7]'} transform translate-2/5`}></div>
         <div className="flex w-8 h-8 rounded-full items-center justify-center absolute bottom-4 right-4 z-10 bg-white">
