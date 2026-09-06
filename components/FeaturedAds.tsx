@@ -1,4 +1,4 @@
-import FeaturedAdsItem from "../ui/FeaturedAdsItem";
+import FeaturedAdsItem from "./ui/FeaturedAdsItem";
 
 export default function FeaturedAds() {
     return <section className="w-full max-w-7xl mx-auto my-6 grid grid-cols-3 gap-6 py-0 px-5">
