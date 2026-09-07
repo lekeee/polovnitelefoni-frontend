@@ -4,6 +4,7 @@ import MainAdsHeader from "@/components/MainAdsHeader";
 import MainInfos from "@/components/MainInfos";
 import AdWidget from "@/components/common/AdWidget";
 import Navbar from "@/components/common/Navbar";
+import Newsletter from "@/components/common/Newsletter";
 import { ChevronRight, HomeIcon, X } from "lucide-react";
 
 export default function Home() {
@@ -47,6 +48,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Newsletter />
       </main>
     </>
   );

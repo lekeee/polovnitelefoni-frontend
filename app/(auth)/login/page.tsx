@@ -64,7 +64,6 @@ export default function LoginPage() {
           )}
         </AnimatePresence>
 
-        {/* SHAPE GORE DESNO - Registracija */}
         <AnimatePresence>
           {!isLogin && (
             <motion.div

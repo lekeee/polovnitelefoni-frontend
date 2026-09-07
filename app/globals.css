@@ -22,13 +22,13 @@ body {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --color-primary: #FF5757;
+  --color-primary: #ff5757;
   --color-secondary: #808080;
-  --color-black: #121B25;
+  --color-black: #121b25;
   --color-blue: #0086e6;
   --color-blue-dark: #041e42;
   --color-third: #041e42;
-  --color-border: #E5E7EB;
+  --color-border: #e5e7eb;
   --color-gray: #f1f1f1;
   --color-green: #29a046;
   --color-green-light: #2bda55;
@@ -36,5 +36,6 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {}
+  :root {
+  }
 }
