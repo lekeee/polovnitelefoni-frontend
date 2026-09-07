@@ -40,6 +40,9 @@ export default function Home() {
                 <AdWidget />
                 <AdWidget />
                 <AdWidget />
+                <AdWidget />
+                <AdWidget />
+                <AdWidget />
               </div>
             </div>
           </div>

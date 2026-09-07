@@ -67,8 +67,8 @@ export default function Filters() {
                 <p className="text-lg font-medium">Grad</p>
             </div>
             <div className="flex flex-col gap-2 items-stretch ml-1 w-full">
-                <select>
-                    <option>Leskovac</option>
+                <select className="p-3 border border-border rounded-xl text-sm">
+                    <option>Svi gradovi</option>
                     <option>Leskovac</option>
                     <option>Leskovac</option>
                     <option>Leskovac</option>
