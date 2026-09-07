@@ -3,6 +3,7 @@ import Filters from "@/components/Filters";
 import MainAdsHeader from "@/components/MainAdsHeader";
 import MainInfos from "@/components/MainInfos";
 import AdWidget from "@/components/common/AdWidget";
+import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
 import Newsletter from "@/components/common/Newsletter";
 import { ChevronRight, HomeIcon, X } from "lucide-react";
@@ -50,6 +51,7 @@ export default function Home() {
         </section>
         <Newsletter />
       </main>
+      <Footer />
     </>
   );
 }

@@ -32,7 +32,9 @@ body {
   --color-gray: #f1f1f1;
   --color-green: #29a046;
   --color-green-light: #2bda55;
+  --color-pink-light: #fcecf0;
   --shadow-soft: 0 0px 10px 0px rgba(0, 0, 0, 0.08);
+  --shadow-softer: 0 0px 10px 0px rgba(0, 0, 0, 0.02);
 }
 
 @media (prefers-color-scheme: dark) {
