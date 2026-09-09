@@ -57,7 +57,7 @@ export default function Navbar() {
           </div>
           <Search />
           <div className="flex items-center gap-8">
-            <Link href="/login" className="flex items-center gap-4">
+            <Link href="/prijava" className="flex items-center gap-4">
               <div className="flex items-center gap-3">
                 <UserAvatar name="John" lastname="Doe" />
                 <div className="flex flex-col items-start">

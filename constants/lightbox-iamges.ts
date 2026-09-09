@@ -1,0 +1,44 @@
+// This example uses externally hosted images due to StackBlitz free plan limitations.
+//
+// You can import local images in your project as follows:
+//
+
+const images = [
+  {
+    src: "https://fdn2.gsmarena.com/vv/bigpic/samsung-samsung-galaxy-s26-fe.jpg",
+    width: 3840,
+    height: 5760,
+  },
+  {
+    src: "https://fdn2.gsmarena.com/vv/bigpic/samsung-samsung-galaxy-s26-fe.jpg",
+    width: 3840,
+    height: 5070,
+  },
+  {
+    src: "https://fdn2.gsmarena.com/vv/bigpic/samsung-samsung-galaxy-s26-fe.jpg",
+    width: 3840,
+    height: 5120,
+  },
+];
+
+const imageSizes = [16, 32, 48, 64, 96, 128, 256, 384];
+const deviceSizes = [640, 750, 828, 1080, 1200, 1920, 2048, 3840];
+
+function nextImageUrl(src: string, size: number) {
+  return `/_next/image?url=${encodeURIComponent(src)}&w=${size}&q=75`;
+}
+
+const slides = images.map(({ src, width, height }) => ({
+  width,
+  height,
+  src: nextImageUrl(src, width),
+  srcSet: [...imageSizes, ...deviceSizes]
+    .filter((size) => size <= width)
+    .map((size) => ({
+      src: src,
+      width: size,
+      height: Math.round((height / width) * size),
+    })),
+}));
+
+export default slides;
