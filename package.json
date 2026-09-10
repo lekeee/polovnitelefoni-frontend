@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@base-ui/react": "^1.8.0",
+    "cn": "^0.2.6",
     "framer-motion": "^13.2.0",
     "lucide-react": "^1.40.0",
     "next": "16.3.4",
