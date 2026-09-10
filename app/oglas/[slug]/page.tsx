@@ -3,9 +3,9 @@ import Navbar from "@/components/common/Navbar";
 import Navigator from "@/components/common/Navigator";
 import AdditionAdInfos from "@/components/ui/AdditionAdInfos";
 import AdOptions from "@/components/ui/AdOptions";
-import LightBox from "@/components/ui/LightBox";
+import SellerShortInfos from "@/components/ui/SellerShortInfos";
 import StateIndicator from "@/components/ui/StateIndicator";
-import { Eye, Heart, RotateCcw, Share, Share2 } from "lucide-react";
+import { Eye, Heart, RotateCcw, Share2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -78,6 +78,7 @@ export default async function Page({ params }: PageProps) {
                 <p>520€</p>
               </div>
               <AdditionAdInfos />
+              <SellerShortInfos />
             </div>
           </div>
         </section>
