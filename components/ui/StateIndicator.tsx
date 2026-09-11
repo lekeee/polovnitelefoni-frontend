@@ -24,7 +24,7 @@ export default function StateIndicator({ isNew, stateScore }: Props) {
   }
 
   return (
-    <div className={`${style} px-4 py-1 rounded-sm`}>
+    <div className={`${style} px-4 py-1 rounded-full`}>
       <span className="text-sm font-semibold leading-3">
         {isNew ? "Novo" : "Polovno " + stateScore?.toString() + " / 10"}
       </span>

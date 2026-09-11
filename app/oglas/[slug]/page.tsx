@@ -33,7 +33,7 @@ export default async function Page({ params }: PageProps) {
         <Navigator links={links} />
         <section className="w-full max-w-7xl mx-auto px-5 mt-5">
           <div className="w-full flex gap-12 items-stretch">
-            <div className="relative w-150 h-168.75 rounded-lg overflow-hidden">
+            <div className="relative w-150 h-168.75 rounded-3xl overflow-hidden">
               <Image
                 src="/iphone-15-pro-max.avif"
                 fill
