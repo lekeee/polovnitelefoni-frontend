@@ -1,11 +1,14 @@
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
 import Navigator from "@/components/common/Navigator";
+import Newsletter from "@/components/common/Newsletter";
+import AdDescription from "@/components/ui/AdDescription";
 import AdditionAdInfos from "@/components/ui/AdditionAdInfos";
 import AdOptions from "@/components/ui/AdOptions";
 import SellerShortInfos from "@/components/ui/SellerShortInfos";
 import StateIndicator from "@/components/ui/StateIndicator";
-import { Eye, Heart, RotateCcw, Share2 } from "lucide-react";
+import { Button } from "@base-ui/react";
+import { AlertCircle, Eye, Heart, RotateCcw, Share2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,18 +16,19 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+const links = [
+  {
+    title: "Apple",
+    url: "/?brand=Apple",
+  },
+  {
+    title: "iPhone 15 Pro Max",
+    url: "/?model=iPhone 15 Pro Max",
+  },
+];
+
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
-  const links = [
-    {
-      title: "Apple",
-      url: "/?brand=Apple",
-    },
-    {
-      title: "iPhone 15 Pro Max",
-      url: "/?model=iPhone 15 Pro Max",
-    },
-  ];
 
   return (
     <>
@@ -81,7 +85,32 @@ export default async function Page({ params }: PageProps) {
               <SellerShortInfos />
             </div>
           </div>
+          <div className="w-full flex gap-12 mt-8">
+            <AdDescription />
+            <div className="flex-1">
+              <div>
+                <div className="flex items-center gap-2">
+                  <AlertCircle className="w-5 h-5 text-secondary" />
+                  <p className="text-lg font-semibold">Kupujte sigurno</p>
+                </div>
+                <div className="mt-2">
+                  <p className="text-sm text-secondary">
+                    Proverite prodavca pre kupovine. Pogledajte njegove ocene,
+                    utiske drugih kupaca i Index poverenja pre nego što
+                    pošaljete novac. Ne uplaćujte novac unapred ako niste
+                    sigurni u prodavca.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-6">
+                <p className="text-xl font-semibold">
+                  Oglasi koji ce Vam se mozda svideti
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
+        <Newsletter />
       </main>
       <Footer />
     </>

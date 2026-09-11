@@ -53,7 +53,8 @@ export default function SellerShortInfos() {
         <PrimaryButton
           href=""
           text="Pozovi prodavca"
-          className="flex-1 bg-green-light"
+          className="flex-1"
+          bgColor="bg-green-light hover:bg-green"
           leadingIcon={Phone}
         />
       </div>

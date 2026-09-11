@@ -6,7 +6,8 @@ type Props = {
   text: string;
   leadingIcon?: LucideIcon;
   tailingIcon?: LucideIcon;
-  className?: string; // Dodat opcioni prop
+  className?: string;
+  bgColor?: string;
 };
 
 export default function PrimaryButton({
@@ -15,11 +16,12 @@ export default function PrimaryButton({
   leadingIcon: LeadingIcon,
   tailingIcon: TailingIcon,
   className = "",
+  bgColor = "bg-primary hover:bg-[#DA5A5A]",
 }: Props) {
   return (
     <Link
       href={href ?? "#"}
-      className={`p-3 text-sm inline-flex items-center justify-center gap-2 font-bold text-white bg-primary rounded-full hover:bg-[#DA5A5A] transition-colors duration-300 ${className}`}
+      className={`p-3 text-sm inline-flex items-center justify-center gap-2 font-bold text-white rounded-full transition-colors duration-300 ${className} ${bgColor}`}
     >
       {LeadingIcon && <LeadingIcon className="w-5 h-5" />}
       <span>{text}</span>

@@ -12,7 +12,7 @@ export default function AdOptions() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger render={<Button />}>
-        <EllipsisVertical />
+        <EllipsisVertical className="cursor-pointer" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="center" className="w-40">
         <DropdownMenuGroup>
