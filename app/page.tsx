@@ -6,6 +6,7 @@ import AdWidget from "@/components/common/AdWidget";
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
 import Newsletter from "@/components/common/Newsletter";
+import Pagination from "@/components/ui/Pagination";
 import { ChevronRight, HomeIcon, X } from "lucide-react";
 
 export default function Home() {
@@ -38,13 +39,16 @@ export default function Home() {
                   <p className="text-sm leading-4">€50 - €450</p>
                 </div>
               </div>
-              <div className="w-full grid  grid-cols-3 gap-3">
-                <AdWidget />
-                <AdWidget />
-                <AdWidget />
-                <AdWidget />
-                <AdWidget />
-                <AdWidget />
+              <div>
+                <div className="w-full grid  grid-cols-3 gap-3">
+                  <AdWidget />
+                  <AdWidget />
+                  <AdWidget />
+                  <AdWidget />
+                  <AdWidget />
+                  <AdWidget />
+                </div>
+                <Pagination slidesCount={5} />
               </div>
             </div>
           </div>
