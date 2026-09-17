@@ -17,6 +17,12 @@ body {
   --background: #f5f9fc;
   --foreground: #171717;
 }
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+}
 
 @theme inline {
   --color-background: var(--background);

@@ -10,7 +10,9 @@ import GradientSeparator from "../ui/GradientSeparator";
 export default function Footer() {
   return (
     <footer className="w-full bg-white shadow-softer mt-10 relative">
-      <div className="w-full max-w-7xl px-5 mx-auto py-15 ">
+      <div className="w-56 h-56 bg-[#f9f0f4] absolute bottom-0 left-0 rounded-tr-full flex items-center justify-center z-0" />
+      <div className="w-32 h-32 bg-[#ebf4fd] absolute top-0 right-0 rounded-bl-full flex items-center justify-center z-0" />
+      <div className="w-full max-w-7xl px-5 mx-auto py-15">
         <div className="w-full flex items-top justify-between gap-32 pb-15">
           <div className="flex flex-col gap-8 max-w-84">
             <div className="flex flex-col gap-2">
@@ -221,8 +223,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-56 h-56 bg-[#f9f0f4] absolute bottom-0 left-0 rounded-tr-full flex items-center justify-center z-0" />
-      <div className="w-32 h-32 bg-[#ebf4fd] absolute top-0 right-0 rounded-bl-full flex items-center justify-center z-0" />
     </footer>
   );
 }
