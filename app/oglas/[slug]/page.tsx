@@ -1,3 +1,4 @@
+import AdWidgetLike from "@/components/common/AdWidgetLike";
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
 import Navigator from "@/components/common/Navigator";
@@ -106,6 +107,9 @@ export default async function Page({ params }: PageProps) {
                 <p className="text-xl font-semibold">
                   Oglasi koji ce Vam se mozda svideti
                 </p>
+                <div className="w-full flex gap-2 mt-2">
+                  <AdWidgetLike />
+                </div>
               </div>
             </div>
           </div>

@@ -39,7 +39,7 @@ export default function Home() {
                   <p className="text-sm leading-4">€50 - €450</p>
                 </div>
               </div>
-              <div>
+              <div className="w-full">
                 <div className="w-full grid  grid-cols-3 gap-3">
                   <AdWidget />
                   <AdWidget />
