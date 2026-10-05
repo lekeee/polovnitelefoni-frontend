@@ -9,12 +9,23 @@ h6 {
   color: var(--color-black);
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 100%;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 100%;
+}
+
 body {
   background-color: var(--color-background);
 }
 
 :root {
-  --background: #f5f9fc;
+  --background: #f3f6f8;
   --foreground: #171717;
 }
 @layer utilities {
@@ -36,6 +47,7 @@ body {
   --color-third: #041e42;
   --color-border: #e5e7eb;
   --color-gray: #f1f1f1;
+  --color-gray-light: #f7f7f7;
   --color-green: #29a046;
   --color-green-light: #2bda55;
   --color-pink-light: #fcecf0;
